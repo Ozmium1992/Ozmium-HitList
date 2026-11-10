@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ozmium HitList</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#080808;color:white;font-family:Arial,sans-serif}
+header{padding:24px 16px;text-align:center;background:#15120a;border-bottom:2px solid #d4af37}
+h1{color:#d4af37;font-size:32px;margin:0}
+.subtitle{color:#ccc;margin-top:10px}
+nav{display:flex;justify-content:center;gap:18px;padding:16px;background:#111;flex-wrap:wrap}
+nav a{color:#d4af37;text-decoration:none;font-weight:bold}
+.hero{text-align:center;padding:45px 20px;background:linear-gradient(#201907,#080808)}
+.hero h2{font-size:28px}
+.gold{color:#d4af37}
+.btn{display:inline-block;background:#d4af37;color:#000;padding:13px 22px;border-radius:8px;text-decoration:none;font-weight:bold;border:0}
+section{padding:24px 16px;max-width:850px;margin:auto}
+.song{background:#171717;border:1px solid #40371d;border-radius:12px;padding:18px;margin:14px 0;display:flex;align-items:center;gap:14px}
+.rank{font-size:26px;color:#d4af37;font-weight:bold}
+.song-info{flex:1}
+.song-info h3{margin:0 0 6px}
+.song-info p{margin:0;color:#aaa}
+.rating{color:#d4af37;font-size:20px}
+footer{text-align:center;padding:30px;color:#999;border-top:1px solid #333}
+</style>
+</head>
+<body>
+<header>
+<h1>OZMIUM HITLIST</h1>
+<p class="subtitle">Jamaica's Music Rating & Chart Platform</p>
+</header>
+<nav>
+<a href="#home">Home</a>
+<a href="#charts">Charts</a>
+<a href="#artists">Artists</a>
+<a href="#about">About</a>
+</nav>
+<div class="hero" id="home">
+<h2>WHO RULES THE <span class="gold">HITLIST?</span></h2>
+<p>Established stars and upcoming Jamaican artists compete on one monthly chart.</p>
+<a class="btn" href="#charts">Explore Charts</a>
+</div>
+<section id="charts">
+<h2 class="gold">Monthly Top Songs</h2>
+<p>Audience ratings determine the rankings.</p>
+<div id="songs">
+<p>Loading the HitList...</p>
+</div>
+</section>
+<section id="artists">
+<h2 class="gold">Jamaican Artists</h2>
+<p>Discover established and upcoming talent.</p>
+</section>
+<section id="about">
+<h2 class="gold">About Ozmium HitList</h2>
+<p>Listen, discover and rate Jamaican music. No account required to explore the charts.</p>
+</section>
+<footer>
+OZMium Records ©️ 2026
+</footer>
+<script>
+document.getElementById("songs").innerHTML =
+'<p>The HitList is getting ready. Songs and live ratings will appear here when the database is connected.</p>';
+</script>
+</body>
+</html>
